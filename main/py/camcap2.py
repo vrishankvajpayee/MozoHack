@@ -142,7 +142,7 @@ cv2.destroyAllWindows()
 
 namesD=pd.DataFrame(names, columns=["Names"])
 namesD= namesD[namesD.Names!="unknown"]
-
+#this is for attendance
 attendance= pd.DataFrame(namesD.iloc[:,0].value_counts())
 attendance.rename(index=str,columns={'Names': 'Count'},inplace=True)
 attendance["Present"] =0
